@@ -1,0 +1,471 @@
+﻿html {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+.navbar{
+    margin:0;
+    background-color:white;
+    z-index:5;
+    text-align:center;
+    position:fixed;
+    width:100%;
+}
+
+#banner{
+    height:600px;
+    width:100%;
+    background-image:url('images/others/banner.jpg');
+    background-size:cover;
+    background-position:top;
+    background-repeat:no-repeat;
+    background-position-y:-9em;
+    background-attachment:fixed;
+}
+
+#banner #profile{
+    height:50%;
+    position:relative;
+    margin:12.5% 0;
+}
+
+#banner #profile .jumbotron{
+    background-color:transparent;
+    color:white;
+}
+
+#banner #profile #name{
+    font-family:lato;
+    animation:name 8s;
+    transition:all ease-in-out 10s;
+}
+
+@keyframes name{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+#banner #profile #branch{
+    font-family:Aclonica;
+    letter-spacing:2px;
+    animation:branch 1.5s;
+    transition:all ease-in-out 10s;
+}
+
+@keyframes branch{
+    0% {
+        transform:translateX(-50em);
+    }
+    100% {
+        transform:translateX(0);
+    }
+}
+
+
+#banner #profile #status{
+    font-family:Akronim;
+    margin:1em 0;
+    animation:status 10s;
+    transition:all ease-in-out 3s;
+}
+
+@keyframes status{
+    0% {
+        transform:scale(0);
+    }
+    80% {
+        transform:scale(2.5);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+#about .jumbotron, #details .jumbotron{
+    background-color:transparent;
+    margin-bottom:0;
+}
+
+#details{
+    font-family:lato;
+    background-image:url('images/others/ev.jpg');
+    background-repeat:repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+}
+
+
+
+
+
+
+#details .topic{
+    height:300px;
+    background-color:#f7f7f7;
+    top:5em;
+    margin:1em 0;
+    padding:5em 5em;
+    box-sizing:border-box;
+    position:relative;
+    transition:all ease-in-out 0.8s;
+    
+}
+
+#details figure{
+    position:relative;
+}
+
+
+#details #info{
+    background-color:grey;
+    opacity:0.8;
+    height:100%;
+    width:100%;
+    top:0;
+    left:-8.2%;        
+    position:absolute;    
+    transform:scale(0);
+    transition:all ease-in-out 1s;
+    padding:7em;
+    box-sizing:border-box;
+    
+}
+
+#details #info span{
+    cursor:pointer;
+    font-size:2em;
+}
+
+#details .topic:hover #info{
+    transform:scale(1);
+}
+
+
+#details .topic #info a{
+    color:black;
+}
+
+#details img{
+    height:150px;
+    width:150px;
+    position:relative;
+}
+
+.window .jumbotron{
+    background-color:transparent;
+}
+
+
+.window{
+    top:0;
+    background-color:white;
+    font-family:lato;
+    transition:all ease-in-out 1s;
+    z-index:6;
+}
+
+
+.window img{
+    height:auto;
+    width:auto;
+}
+
+.window ul li{
+    margin:1em 0;
+    font-size:1.5em;    
+}
+
+
+#gallery {
+    padding-bottom:10em ;
+    overflow: hidden;
+    background-image:url('images/others/design-bg.png');
+    background-attachment:fixed;
+}
+
+#gallery img{
+    margin:2em 0;
+    height:300px;
+    width:300px;
+}
+
+#gallery .jumbotron{
+    background-color:transparent;
+    font-family:lato;
+}
+
+
+
+#gallery #magnify{
+    position:absolute;
+    width:60%;
+    background-color:#333;
+    margin-left:20%;
+    height:60%;
+    margin-top:20%;
+    opacity:0.7;
+    transform:scale(0);
+    transition:all ease-in-out 1s;
+    color:white;
+    cursor:pointer;
+}
+
+#gallery #image:hover #magnify{
+    transform:scale(1);
+}
+
+#gallery #image{
+	transition:all ease-in-out 2s;
+}
+
+#gallery #pic-1{
+    transform:translate(-100px,50px);
+    transition:all ease-in-out 2s;
+}
+
+#gallery #pic-2{
+    transform:translate(0,0);
+    transition:all ease-in-out 2s;
+}
+
+#gallery #pic-3{
+    transform:translate(100px,50px);
+    transition:all ease-in-out 2s;
+}
+
+#gallery #pic-4{
+    transform:translate(-200px,50px);
+    transition:all ease-in-out 2s;
+}
+
+#gallery #pic-5{
+    transform:translate(0,0);
+    transition:all ease-in-out 2s;
+}
+
+#gallery #pic-6{
+    transform:translate(100px,50px);
+    transition:all ease-in-out 2s;
+}
+
+
+#windows{
+    position:fixed;
+    overflow: hidden;
+    z-index:6;
+    width:80%;
+    margin-left:10%;
+    height:95%;
+    top:2.5%;
+    transform:scale(0);
+    background-color:red;
+    background-size:cover;
+    background-image:none;
+    background-position:top;
+    background-repeat:no-repeat;
+    transition:all ease-in-out 1s;
+    box-shadow:0 0 100px black;
+}
+
+#testimonials{
+    overflow: hidden;
+    font-family:lato;
+    background-image:url("images/testimonials/slide1.jpg");
+    background-size:cover;
+    background-attachment:fixed
+}
+
+#testimonials .container-fluid{
+    ;
+}
+
+#testimonials .jumbotron{
+    background-color:transparent;
+    color:white;
+    margin:0;
+}
+
+#testimonials .testimony{
+    margin:2em 0;
+    opacity:0.9;
+    transition:all ease-in-out 1s;
+}
+
+
+#testimonials .testimony .content{
+    background-color:mintcream;
+    padding:2em 2em;
+    box-border:border-box;
+    border-radius:5px;
+    text-align:justify;
+}
+
+#testimonials .testimony .content img{
+    margin:1em 0;
+}
+
+
+
+#certification .container{
+    box-sizing:border-box;
+}
+
+.window #publication li{
+    margin:0.3em 0;
+}
+
+.window #publication a{
+    color:blue;
+}
+
+#projects ul li{
+    font-size:1.2em;
+}
+
+#contact{
+    background-image:url("images/others/login.jpg");
+    background-size:cover;
+    color:white;
+}
+
+#contact .jumbotron{
+    background-color:transparent;
+    color:white;
+    width:100%;
+    margin-bottom:-5em;
+}
+
+#contact .container{
+    padding:5em 5em;
+    box-sizing:box-border;
+    margin-bottom:-2em;
+}
+
+footer{
+    background-color:black;
+    text-align:center;
+    padding:1em 1em;
+    box-sizing:border-box;
+    color:white;
+    position:relative;
+    bottom:0;
+}
+
+@media screen and (max-width:1024px){
+
+    #details #info{
+    background-color:grey;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;        
+    position:absolute;    
+    transform:scale(0);
+    transition:all ease-in-out 1s;
+    
+}
+
+}
+
+@media screen and (max-width:900px){
+
+    #banner{
+        background-position-y:0;
+    }
+
+     #banner #profile #name{
+        margin-bottom:1em;
+        margin-top:2em;
+    }
+
+    #banner #profile #branch{
+       margin-bottom:1em;
+    }
+
+    #banner #profile #status{
+        line-height:30px;
+        letter-spacing:3px;
+        animation:status1 2s;
+    }
+
+    @keyframes status1{
+        0%{transform:scale(0);}
+        100%{transform:scale(1);}
+    }
+
+    #details #info{
+        background-color:grey;
+        height:100%;
+        width:100%;
+        top:0;
+        left:0;        
+        position:absolute;    
+        transform:scale(0);
+        transition:all ease-in-out 1s;
+    
+    }
+
+    #details .topic h3{
+        font-size:1.2em;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    #about p{
+        text-align:justify;
+    }   
+    
+    .window img{
+        margin-top:-50px;
+        transform:scale(0.8);
+    }   
+
+    #certification img{
+       display:none;
+    }   
+
+    .window ul li{
+        margin:1em 0;
+        font-size:0.9em;  
+        text-align:justify;  
+    }
+
+    
+    .window #publication li{
+        margin:0.2em 0;
+    }
+
+    #projects ul li{
+    font-size:0.8em;
+    text-align:justify;
+}
+
+    #contact .container{
+        padding:2em 2em;
+    }
+
+    #contact .jumbotron{
+        margin:0;
+    }
+}
+
+@media screen and (max-width:640px){
+
+     #testimonials .testimony .content img{
+        height:100px;
+        width:100px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+}
